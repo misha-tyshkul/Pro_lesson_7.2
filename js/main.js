@@ -43,10 +43,7 @@ function upperCase() {
 
     item.money = Math.round(item.money);
 
-    if (typeof item.money === "string") {
-      item.money = Number(item.money);
-      return item.money;
-    } else if (isNaN(item.money)) {
+    if (isNaN(item.money)) {
       console.log("Error");
     }
   }
